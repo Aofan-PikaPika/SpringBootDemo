@@ -12,7 +12,7 @@ public class HelloController {
     @Autowired
     private Resource resource;
 
-    @RequestMapping("/hello2020")
+    @RequestMapping("/hello")
     public Resource Hello(){
         Resource bean=new Resource();
         BeanUtils.copyProperties(resource,bean);
